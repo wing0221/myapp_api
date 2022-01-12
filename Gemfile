@@ -29,6 +29,8 @@ gem 'hirb', '~> 0.7.3'
 gem 'hirb-unicode-steakknife', '~> 0.0.9'
 # パスワード暗号化 Doc: https://github.com/codahale/bcrypt-ruby
 gem 'bcrypt', '~> 3.1', '>= 3.1.12'
+# JWT doc:https://rubygems.org/gems/jwt
+gem 'jwt', '~> 2.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
