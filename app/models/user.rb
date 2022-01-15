@@ -47,6 +47,10 @@ class User < ApplicationRecord
       update!(refresh_jti: jti)
     end
 
+    def response_json(payload = {})
+      as_json(only: [:id, :name]).merge(payload).with_indifferent_access
+    end
+
     def forget
       update!(refresh_jti: nil)
     end
