@@ -4,7 +4,7 @@ Rails.application.routes.draw do
       # auth_token
       resources :auth_token, only:[:create] do
         post :refresh, on: :collection
-        delete :destory, on: :collection
+        delete :destroy, on: :collection
       end
     end
   end
